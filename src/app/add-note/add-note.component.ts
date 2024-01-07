@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 import { NOTES } from '../../notes';
 
 @Component({
@@ -13,12 +14,16 @@ import { NOTES } from '../../notes';
   styleUrl: './add-note.component.css'
 })
 /**
- * The FormGroup class is used to create a top-level FormGroup instance and
- * bind it to a form to track aggregate form value and validation status.
+ * Inject Router which provides navigation and URL manipulation capabilities as a dependency into the class.
+ *
+ * The FormGroup class is used to create a top-level FormGroup instance and bind it to a form to track
+ * aggregate form value and validation status.
  *
  * The FormControl class is used to track the value and validation status of an individual form control.
  */
 export class AddNoteComponent {
+  router = inject(Router);
+
   noteForm = new FormGroup({
     title: new FormControl('', Validators.required),
     text: new FormControl(''),
@@ -28,9 +33,12 @@ export class AddNoteComponent {
    *
    * If the noteForm instance is valid, the function generates a new id for the note by finding the maximum
    * id value in the NOTES array and incrementing it by 1.
+   *
    * The function then adds the new note to the beginning of the NOTES array using the unshift() method.
    *
-   * Finally, the reset() method clears the form input fields and make it ready for the next note to be added.
+   * The reset() method clears the form input fields and make it ready for the next note to be added.
+   *
+   * Finally, after adding a new note, the list of notes is loaded.
    */
   addNote() {
   const title = this.noteForm.value.title ?? '';
@@ -46,6 +54,8 @@ export class AddNoteComponent {
     };
     NOTES.unshift(newNote);
     this.noteForm.reset();
+
+    this.router.navigateByUrl('/');
   }
   }
 }

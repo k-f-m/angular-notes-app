@@ -26,3 +26,13 @@ button {
   padding: 10px;
   cursor: pointer;
 }
+
+.add-new {
+  width: 100px;
+  border: thin solid rgb(21, 17, 17);
+  border-radius: 10px;
+  margin-top: 15px;
+  background: rgb(162, 229, 150);
+  padding: 10px;
+  cursor: pointer;
+}

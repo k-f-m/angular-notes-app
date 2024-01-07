@@ -1,16 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 html,
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
   background-color: #f5edf2;
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 .canvas {
   text-align: center;
   margin: 0 auto;
-  padding: 15px;
-  padding-left: 0px;
 }
 .note-title {
   display: block;
@@ -30,14 +29,4 @@ body {
 
 h2 {
   font-size: 15pt;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #19a822;
-  color: #fff;
-  font-size: 10pt;
-  border: none;
 }

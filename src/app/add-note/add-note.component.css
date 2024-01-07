@@ -1,12 +1,20 @@
 form div {
   padding: 3px;
 }
+
 form button {
-  margin-top: 5px;
+  margin-top: 1px;
 }
+
 form button:disabled {
-  background-color: gray;
+  background-color: rgb(195, 192, 192);
 }
-form label {
-  font-weight: bold;
+
+.form-title {
+  display: block;
+  margin-bottom: -10px;
+}
+
+.form-text {
+  display: block;
 }

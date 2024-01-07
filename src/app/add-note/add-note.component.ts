@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 import { NOTES } from '../../notes';
 
 @Component({
   selector: 'app-add-note',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, MatInputModule, MatButtonModule],
   templateUrl: './add-note.component.html',
   styleUrl: './add-note.component.css'
 })

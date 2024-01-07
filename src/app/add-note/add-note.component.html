@@ -1,18 +1,20 @@
 <div class="canvas">
   <h2>Add Note</h2>
   <form [formGroup]="noteForm" (ngSubmit)="addNote()">
-    <div>
-      <label for="note-title">
-        Title:
-        <input id="note-title" formControlName="title" />
-      </label>
+    <div class="form-group">
+      <div class="form-title">
+        <mat-form-field>
+          <mat-label>Title:</mat-label>
+          <input matInput id="note-title" formControlName="title" placeholder="Enter title here">
+        </mat-form-field>
+      </div>
+      <div class="form-text">
+        <mat-form-field>
+          <mat-label>Text:</mat-label>
+          <textarea matInput id="note-text" formControlName="text" placeholder="Enter text here"></textarea>
+        </mat-form-field>
+      </div>
     </div>
-    <div>
-      <label for="note-text">
-        Text:
-        <input id="note-text" formControlName="text" />
-      </label>
-    </div>
-    <button type="button" class="button" type="submit" [disabled]="!noteForm.valid" >Submit</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!noteForm.valid">Submit</button>
   </form>
 </div>

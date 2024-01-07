@@ -1,0 +1,10 @@
+@if (note) {
+<div id="canvas">
+  <span class="note-id">ID: {{ note.id }}</span>
+  <span class="note-title">{{ note.title }}</span>
+  <span class="note-text">{{ note.text }}</span>
+</div>
+}
+<nav>
+  <button mat-raised-button color="primary" routerLink="">Back to List</button>
+</nav>

@@ -27,7 +27,7 @@ button {
   cursor: pointer;
 }
 
-.add-new {
+.add-new-button {
   width: 100px;
   border: thin solid rgb(21, 17, 17);
   border-radius: 10px;

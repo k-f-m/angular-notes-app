@@ -6,7 +6,7 @@ body {
   background-color: #f5edf2;
   font-family: Helvetica, sans-serif;
 }
-.canva {
+.canvas {
   text-align: center;
   margin: 0 auto;
   padding: 15px;
@@ -26,4 +26,18 @@ body {
   text-align: left;
   color: rgb(125, 124, 124);
   font-size: 11pt;
+}
+
+h2 {
+  font-size: 15pt;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #19a822;
+  color: #fff;
+  font-size: 10pt;
+  border: none;
 }

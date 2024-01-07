@@ -1,0 +1,12 @@
+form div {
+  padding: 3px;
+}
+form button {
+  margin-top: 5px;
+}
+form button:disabled {
+  background-color: gray;
+}
+form label {
+  font-weight: bold;
+}

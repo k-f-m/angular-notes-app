@@ -1,5 +1,5 @@
 // Represent a note object with an ID, title, and text
-interface Note {
+export interface Note {
   id: number;
   title: string;
   text: string;

@@ -4,7 +4,9 @@
   align-items: center;
   max-width: auto;
   margin: 0 auto;
-  padding-left: 15px;
+  padding-left: 25px;
+  padding-right: 30px;
+  flex-wrap: wrap;
 }
 .notes li {
   margin-bottom: 20px;

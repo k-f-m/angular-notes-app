@@ -1,0 +1,12 @@
+<div class="canva">
+  <ul class="notes">
+    @for (note of notes; track $index) {
+    <li>
+      <button (click)="showText(note.text)">
+        <span class="note-title">{{ note.title }}</span>
+        <span class="note-text">{{ note.text }}</span>
+      </button>
+    </li>
+    }
+  </ul>
+</div>

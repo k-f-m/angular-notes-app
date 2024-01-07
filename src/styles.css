@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f5edf2;
+  font-family: Helvetica, sans-serif;
+}
+.canva {
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px;
+  padding-left: 0px;
+}
+.note-title {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 12pt;
+  color: #000;
+}
+.note-text {
+  display: block;
+  text-align: left;
+  color: rgb(125, 124, 124);
+  font-size: 11pt;
+}

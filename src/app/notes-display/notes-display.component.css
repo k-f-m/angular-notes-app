@@ -1,0 +1,25 @@
+.notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+.notes li {
+  margin-bottom: 20px;
+  margin-left: 8px;
+  list-style: none;
+  padding: 0px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  text-align: left;
+}
+button {
+  width: 100%;
+  border: thin dashed green;
+  border-radius: 18px;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+}

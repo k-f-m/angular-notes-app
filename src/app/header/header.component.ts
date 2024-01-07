@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <h1>
-      Header Works!
+      Notes
     </h1>
   `,
   styleUrl: './header.component.css'

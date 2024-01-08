@@ -11,9 +11,16 @@ import { NOTES } from '../../notes';
   styleUrl: './note-detail.component.css'
 })
 
-  // Inject ActivatedRoute to get the current route, extract its ID, and find the corresponding note
 export class NoteDetailComponent {
+    // Inject ActivatedRoute to get the current route, extract its ID, and find the corresponding note
     currentRoute = inject(ActivatedRoute);
     id = Number(this.currentRoute.snapshot.paramMap.get('id'));
     note = NOTES.find((note) => note.id === this.id);
+
+    onDeleteNote() {
+      if (this.note != undefined) {
+        const index = NOTES.indexOf(this.note, 0);
+        NOTES.splice(index, 1);
+      }
+    }
 }

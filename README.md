@@ -4,9 +4,9 @@ This repository demonstrates a single-page application (SPA) for note taking usi
 
 ![Notes list](notes-list.png)
 
-![Note details](note-details.png)
-
 ![Add a note](add-note.png)
+
+![Note details](note-details.png)
 
 ## Features
 - <b>Material Design</b>: Provides a modern look and feel
